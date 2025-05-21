@@ -14,16 +14,19 @@ class MainWidget extends StatefulWidget {
 class _MainWidgetState extends State<MainWidget> {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          Navbar(),
-          HeroSection(),
-          FoodRowSection(),
-          DishOfTheDay(),
-          // ProjectsSection(),
-          // ContactSection(),
-        ],
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Navbar(),
+            HeroSection(),
+            FoodRowSection(),
+            DishOfTheDay(),
+            // ProjectsSection(),
+            // ContactSection(),
+          ],
+        ),
       ),
     );
   }
